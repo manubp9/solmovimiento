@@ -15,7 +15,7 @@ public class Picture
     private Square window;
     private Triangle roof;
     private Circle sun;
-    
+    private Circle sun2;
 
     /**
      * Constructor for objects of class Picture
