@@ -17,6 +17,11 @@ public class Picture
     private Circle sun;
     private Circle campo;
     private Person persona;
+    private Person child;
+    private Circle wheel1;
+    private Circle wheel2;
+    private Square box;
+    
 
     /**
      * Constructor for objects of class Picture
@@ -114,6 +119,37 @@ public class Picture
         persona.moveVertical(65);
         persona.slowMoveHorizontal(200);
     }
+       /**
+     * make a child car
+     */
+    public void childCar()
+     {
+         child = new Person();
+         child.changeSize(30,20);
+         child.moveVertical(40);
+         child.moveHorizontal(140);
+         child.makeVisible();
+         
+         wheel1 = new Circle();
+         wheel1.changeSize(20);
+         wheel1.moveVertical(190);
+         wheel1.moveHorizontal(160);
+         wheel1.makeVisible();
+         
+         wheel2 = new Circle();
+         wheel2.changeSize(20);
+         wheel2.moveVertical(190);
+         wheel2.moveHorizontal(200);
+         wheel2.makeVisible();
+         
+         box = new Square();
+         box.changeSize(40);
+         box.moveVertical(130);
+         box.moveHorizontal(90);
+         box.makeVisible();
+       
+         
+        
 }
  
-
+}
