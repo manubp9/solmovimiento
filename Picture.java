@@ -62,10 +62,7 @@ public class Picture
         sun.moveHorizontal(100);
         sun.changeSize(80);
         sun.makeVisible();
-        sun.slowMoveVertical(65);
-        
-        
-        
+       
       }
 
     /**
@@ -95,4 +92,17 @@ public class Picture
             sun.changeColor("yellow");
         }
     }
+      /**
+     * move sun and change color 
+     */
+    public void moveSun()
+   {
+         sun.slowMoveVertical(65);
+        
+        sun.changeColor("black");
+        campo.changeColor("black");
+        roof.changeColor("black");
+        wall.changeColor("black");
+        window.changeColor("white");
+       }
 }
