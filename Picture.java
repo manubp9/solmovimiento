@@ -151,5 +151,37 @@ public class Picture
          
         
 }
- 
+  /**
+     * make a child car run
+     */
+    public void childCarRun()
+    {    child = new Person();
+         child.changeSize(30,20);
+         child.moveVertical(40);
+         child.moveHorizontal(140);
+         child.makeVisible();
+         
+         wheel1 = new Circle();
+         wheel1.changeSize(20);
+         wheel1.moveVertical(190);
+         wheel1.moveHorizontal(160);
+         wheel1.makeVisible();
+         
+         wheel2 = new Circle();
+         wheel2.changeSize(20);
+         wheel2.moveVertical(190);
+         wheel2.moveHorizontal(200);
+         wheel2.makeVisible();
+         
+         box = new Square();
+         box.changeSize(40);
+         box.moveVertical(130);
+         box.moveHorizontal(90);
+         box.makeVisible();
+         
+         child.slowMoveHorizontal(-100);
+         wheel1.slowMoveHorizontal(-100);
+         wheel2.slowMoveHorizontal(-100);
+         box.slowMoveHorizontal(-100);
+}
 }
