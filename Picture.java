@@ -105,7 +105,8 @@ public class Picture
     public void moveSun()
    {
          sun.slowMoveVertical(65);
-        
+          setBlackAndWhite()
+        ;
         
        }   
         /**
@@ -184,4 +185,12 @@ public class Picture
          wheel2.slowMoveHorizontal(-100);
          box.slowMoveHorizontal(-100);
 }
+ 
+         
+         
+         
+
+
+
+    
 }
